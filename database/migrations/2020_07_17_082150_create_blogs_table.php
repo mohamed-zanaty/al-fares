@@ -22,9 +22,9 @@ class CreateBlogsTable extends Migration
             $table->boolean('featured')->default(0);
             $table->boolean('status')->default(0);
             $table->string('image')->nullable();
-            $table->string('seo_title');
-            $table->string('seo_description');
-            $table->string('seo_keyword');
+            $table->string('seo_title'->nullable());
+            $table->string('seo_description')->nullable();
+            $table->string('seo_keyword')->nullable();
             $table->timestamps();
         });
     }
