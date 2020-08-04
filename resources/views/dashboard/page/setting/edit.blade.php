@@ -10,9 +10,9 @@
                     <div class="row breadcrumbs-top">
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">  {{__('site.main')}}</a>
+                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('site.main')}}</a>
                                 </li>
-                                <li class="breadcrumb-item">  {{__('site.setting')}}
+                                <li class="breadcrumb-item"> {{__('site.setting')}}
                                 </li>
 
                             </ol>
@@ -111,7 +111,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label>  {{__('site.iamge')}}</label>
+                                        <label>  {{__('site.image')}}</label>
                                         <input type="file" name="image" class="form-control image">
                                     </div>
 

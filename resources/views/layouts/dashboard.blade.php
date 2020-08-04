@@ -158,17 +158,11 @@
 
 {{--ckeditor standard--}}
 <script src="{{ asset('dashboard/js/plugins/ckeditor/ckeditor.js') }}"></script>
-<script src="{{ asset('dashboard/js/plugins/morris/morris.min.js') }}"></script>
 
 
 {{--custom js--}}
 <script src="{{ asset('dashboard/js/js/custom/image_preview.js') }}"></script>
-<script src="{{ asset('dashboard/js/js/jquery.number.min.js') }}"></script>
-<script src="{{ asset('dashboard/js/js/custom/product.js') }}"></script>
-<script src="{{ asset('dashboard/js/plugins/printThis.js') }}"></script>
-<script src="{{url('public/noty/noty.min.js')}}" type="text/javascript"></script>
 <!--end::Page Snippets -->
-<script src="{{url('public/js/editadmin.js')}}"></script>
 @stack('scripts')
 <script>
     $('#meridians1').timeDropper({
