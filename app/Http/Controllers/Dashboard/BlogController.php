@@ -73,8 +73,9 @@ class BlogController extends Controller
 
         if ($request->image) {
             Image::make($request->image)
-                ->resize(600, 500, function ($constraint) {
+                ->resize(258,313 , function ($constraint) {
                     $constraint->aspectRatio();
+                    $constraint->upsize();
                 })
                 ->save(public_path('uploads/blog/' . $request->image->hashName()));
 
@@ -85,6 +86,7 @@ class BlogController extends Controller
 
             $request_data['featured'] = 1;
         }
+
         if ($request->status) {
 
             $request_data['status'] = 1;
@@ -136,8 +138,9 @@ class BlogController extends Controller
 
             }//end of inner if
             Image::make($request->image)
-                ->resize(800, 800, function ($constraint) {
+                ->resize(258,313 , function ($constraint) {
                     $constraint->aspectRatio();
+                    $constraint->upsize();
                 })
                 ->save(public_path('uploads/blog/' . $request->image->hashName()));
 
@@ -178,7 +181,7 @@ class BlogController extends Controller
             toast(__('site.error'), 'error');
 
 
-        toast(__('site.deleted_successfully'), 'success');
+        toast(__('site.updated_successfully'), 'success');
         return redirect()->route('blog.index');
     }//end of destroy
 

@@ -23,6 +23,6 @@ class ContactMail extends Mailable
     {
         $data = $this->data;
 
-        return $this->view('mail.mail', compact('data'));
+        return $this->view('front.mail.mail', compact('data'));
     }
 }

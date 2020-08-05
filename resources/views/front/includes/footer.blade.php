@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-lg-4">
-            <div class="logo">
+            <div class="logo" style="text-align: center">
                 <img style="max-width: 100%" src="{{$setting->image_path}}" alt="">
             </div>
         </div>

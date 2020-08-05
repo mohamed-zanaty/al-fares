@@ -58,9 +58,9 @@
                                     @endforeach
 
                                     @foreach(config('translatable.locales') as $locale)
-                                        <div class="form-group">
+                                        <div class="form-group">{{ old($locale.'.description')}}
                                             <label>@lang('site.'.$locale.'.description')</label>
-                                            <input required type="text" name="{{$locale}}[description]" class="form-control" value="{{$category->translate($locale)->description}}">
+                                            <textarea required type="text" name="{{$locale}}[description]" class="form-control ckeditor" >{{$category->translate($locale)->description}}</textarea>
                                         </div>
                                     @endforeach
 

@@ -9,6 +9,7 @@ use App\Models\Category;
 use App\Models\Contact;
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 
 class FrontController extends Controller
@@ -43,19 +44,15 @@ class FrontController extends Controller
     public function save(Request $request)
     {
 
-
-          $request->validate([
+        $request_data = $request->validate([
             'email' => 'required|max:40|min:3',
             'phone' => 'max:40|min:3',
             'message' => 'required|max:200|min:3',
         ]);
 
-
-        $request_data = $request->except('_token');
         $mailTo = Setting::first();
-        $mail = new ContactMail($request->all());
 
-        $mail->to([$mailTo->email])->from([$request->email]);
+        Mail::to([$mailTo->email,$request_data['email']])->send(new ContactMail($request->all()));
 
         $create = Contact::create($request_data);
 

@@ -5,25 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{$setting->title}}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-@if(app()->getLocale() == 'en')
+    <link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
 
-        <link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}">
-        <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
-        <style>
-            *{
-                font-family:  sans-serif;
-            }
-        </style>
-    @else
-        <link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}">
-        <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
+    @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" href="{{asset('front/css/style-ar.css')}}">
         <link href="//db.onlinewebfonts.com/c/7d411bb0357d6fd29347455b7d207995?family=JF+Flat" rel="stylesheet"
               type="text/css"/>
-        <link href="{{asset('front/css/bootstrap-rtl.css')}}" rel="stylesheet">\
+        <link href="{{asset('front/css/bootstrap-rtl.css')}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
         <style>
-            *{
+            * {
                 font-family: 'Cairo', sans-serif;
                 font-size: 17px;
             }

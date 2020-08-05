@@ -149,7 +149,7 @@ class CategoryController extends Controller
         toast('site.updated_successfully', 'success');
         return redirect()->route('category.index');
 
-    }//end of update
+    } // end of update
 
 
     public function destroy($id)

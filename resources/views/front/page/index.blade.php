@@ -15,13 +15,14 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="slider">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleIndicators"  class="carousel slide" data-ride="carousel">
 
-                            <div class="carousel-inner" style="max-height: 100%; height: 500px">
+                            <div class="carousel-inner" >
                                 @foreach($features as $index=>$feature)
-                                    <div class="carousel-item {{$index == 0 ? 'active' : ''}}" style="height: 100%">
-                                        <img class="d-block w-100 my-image "
-                                             src="{{$feature ->image_path}}" style="height: 100% !important;" alt="First slide">
+                                    <div class="carousel-item {{$index == 0 ? 'active' : ''}}"  >
+                                        <img class="d-block w-100 my-image image-feature " style="margin: auto"
+                                             src="{{$feature ->image_path}}"
+                                             alt="First slide">
                                     </div>
                                 @endforeach
                             </div>
@@ -51,14 +52,14 @@
             </div>
             <div class="row">
                 @foreach($categories as $category)
-                    <div class="col-lg-4" style=" margin-bottom: 30px">
-                            <a href="{{route('service.show',$category->id)}}">
-                            <div class="ser-div"  style="height: 100%;" >
+                    <div class="col-lg-4" style=" ">
 
-                                <div class="ser-back" style="height: 100%">{{$category->name}}</div>
-                                <img  src="{{$category->image_path}}" class="my-image" style="" alt="">
+                        <a href="{{route('service.show',$category->id)}}">
+                            <div class="ser-div">
+                                <div class="ser-back {{ strlen($category->name) > 19 ? "websites" : '' }}">{{$category->name}}</div>
+                                <img src="{{$category->image_path}}" alt="">
                             </div>
-                            </a>
+                        </a>
                     </div>
                 @endforeach
             </div>

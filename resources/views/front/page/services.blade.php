@@ -7,13 +7,12 @@
     <div class="container">
         <div class="works ">
             <div class="row">
-                <div class=" col-lg-3">
-                    <div class="header">
-                        <h1 style="font-size: 40px">
-                            @lang('site.category') :
-                        </h1>
+                <div class=" col-lg-4">
+                    <div class="header" style="    text-align: start;
+    margin: 20px;">
+
                         <div>
-                            <span style=" color: white; font-size: 25px">
+                            <span style=" color: white; font-size: 28px; font-weight: bold">
                                 - {{$category->name}}
                             </span>
                             <br>
@@ -22,12 +21,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                            <div class="carousel-inner" style="max-height: 100%; height: 500px">
+                <div class="col-lg-8">
+                            <div class="carousel-inner" style="">
 
-                                    <div class="" style="height: 100%">
-                                        <img class="d-block w-100 my-image "
-                                             src="{{$category->image_path}}" style="height: 100% !important;" alt="First slide">
+                                    <div class="" >
+                                        <img class="d-block w-100 my-image image-feature"
+                                             src="{{$category->image_path}}" style=" background: transparent" alt="First slide">
                                     </div>
 
                             </div>
