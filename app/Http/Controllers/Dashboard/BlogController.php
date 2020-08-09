@@ -63,9 +63,9 @@ class BlogController extends Controller
         foreach (config('translatable.locales') as $locale) {
             $rules += [$locale . '.*' => 'required'];
         }
-        $rules += ['image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:200'];
+        $rules += ['image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:200|required'];
         $rules += ['category_id' => 'required'];
-
+        $rules += ['link'=>'max:300|min:8'];
 
         $request->validate($rules);
 
@@ -124,7 +124,8 @@ class BlogController extends Controller
         foreach (config('translatable.locales') as $locale) {
             $rules += [$locale . '.*' => 'required'];
         }
-        $rules += ['image'=>'image|mimes:jpeg,png,jpg,gif,svg|max:200'];
+        $rules += ['image'=>'image|mimes:jpeg,png,jpg,gif,svg|max:200|required'];
+        $rules += ['link'=>'max:300|min:8'];
         $rules += ['category_id' => 'required'];
 
         $request->validate($rules);

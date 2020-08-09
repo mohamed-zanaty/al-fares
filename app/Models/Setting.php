@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Setting extends Model
 {
     protected $fillable = [
-      'title', 'email', 'number1', 'number2', 'url','facebook','twitter','instagram','youtube','image'
-        ,'address'
+      'title', 'email', 'number','facebook','twitter','instagram','youtube','image'
+
     ];
 
     protected $appends = ['image_path'];

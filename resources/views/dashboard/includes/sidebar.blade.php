@@ -1,9 +1,9 @@
-<div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
+<div class="main-menu menu-fixed menu-dark menu-accordion    menu-shadow " data-scroll-to-active="true">
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             {{--Main --}}
-            <li class="nav-item {{request()->segment(3) == '' && request()->segment(2) == 'admin'? 'active' : ''  }}"><a href="{{route('admin.dashboard')}}"><i
+            <li  class="nav-item {{request()->segment(3) == '' && request()->segment(2) == 'admin'? 'active' : ''  }}"><a href="{{route('admin.dashboard')}}"><i
                         class="la la-bar-chart-o"></i><span
                         class="menu-title" data-i18n="nav.add_on_drag_drop.main">{{__('site.main')}} </span></a>
             </li>

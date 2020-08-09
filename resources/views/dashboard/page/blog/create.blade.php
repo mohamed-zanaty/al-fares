@@ -89,7 +89,10 @@
                                              class="img-thumbnail image-preview" alt="">
                                     </div>
 
-
+                                    <div class="form-group " style="margin-top: 60px">
+                                        <label>@lang('site.link')</label>
+                                        <input type="text" name="link"  class="form-control">
+                                    </div>
 
                                     {{--Seo--}}
                                     <div class="row">

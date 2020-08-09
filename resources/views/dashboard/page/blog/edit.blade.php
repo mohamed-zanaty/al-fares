@@ -90,6 +90,12 @@
                                              class="img-thumbnail image-preview" alt="">
                                     </div>
 
+                                    <div class="form-group" style="margin-top: 60px">
+                                        <label>@lang('site.link')</label>
+                                        <input type="text" name="link" value="{{$post->link}}" class="form-control">
+
+                                    </div>
+
 
 
 
@@ -186,7 +192,7 @@
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary"><i
-                                                class="fa fa-plus"></i> @lang('site.add')</button>
+                                                class="fa fa-plus"></i> @lang('site.edit')</button>
                                     </div>
                                 </form><!-- end of form -->
 

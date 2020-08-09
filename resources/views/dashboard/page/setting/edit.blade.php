@@ -57,10 +57,7 @@
 
 
 
-                                    <div class="form-group">
-                                        <label>  {{__('site.address')}}</label>
-                                        <input name="address" class="form-control" value="{{ $setting->address}}">
-                                    </div>
+
 
 
                                     <div class="form-group">
@@ -71,16 +68,11 @@
 
 
                                     <div class="form-group">
-                                        <label>  {{__('site.number')}}1 </label>
-                                        <input name="number1" class="form-control"
-                                               value="{{ $setting->number1}}">
+                                        <label>  {{__('site.number')}} </label>
+                                        <input name="number" class="form-control"
+                                               value="{{ $setting->number}}">
                                     </div>
 
-                                    <div class="form-group">
-                                        <label>    {{__('site.number')}}2</label>
-                                        <input name="number2" class="form-control"
-                                               value="{{ $setting->number2}}">
-                                    </div>
 
 
                                     <div class="form-group">
@@ -122,10 +114,10 @@
 
 
                                     <div class="form-group">
-                                        @if (auth('admin')->user()->hasPermission('settings_update'))
+
                                             <button type="submit" class="btn btn-primary"><i
                                                     class="fa fa-plus"></i> @lang('site.update')</button>
-                                        @endif
+
                                     </div>
                                 </form><!-- end of form -->
 

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="logo" style="text-align: center">
-                <img style="max-width: 100%" src="{{$setting->image_path}}" alt="">
+                <img style="max-width: 100%; {{app()->getLocale() == 'ar'?  'transform:  rotateY(180deg);' : ''}}" src="{{$setting->image_path}}" alt="">
             </div>
         </div>
         <div class="col-lg-8">
@@ -42,25 +42,24 @@
 </div>
 <!-- end contact -->
 <!-- start footer -->
-<div class="footer" style="text-align: center">
-    <div class="social-media" style="text-align: center" >
-        <a href="{{$setting->facebook}}" style="margin: 15px">
-            <i class="fa fa-facebook" style="font-size: 25px"></i>
+<div class="footer" style="background: #4c5059!important;">
+    <div class="social-media" >
+        <a href="{{$setting->facebook}}" target="_blank">
+            <i class="fa fa-facebook" ></i>
         </a>
-        <a href="{{$setting->instagram}}" style="margin: 15px">
-            <i class="fa fa-instagram" style="color: purple;font-size: 25px"></i>
+
+        <a href="{{$setting->instagram}}"  target="_blank">
+            <i class="fa fa-instagram" ></i>
         </a>
-        <a href="{{$setting->twitter}}" style="margin: 15px">
-            <i class="fa fa-twitter" style="color: cornflowerblue;font-size: 25px"></i>
+        <a href="{{$setting->twitter}}" target="_blank" >
+            <i class="fa fa-twitter" ></i>
         </a>
-        <a href="{{$setting->number1}}" style="margin: 15px">
-            <i class="fa fa-phone" style="color: white;font-size: 25px"></i>
+        <a href="{{$setting->number}}" target="_blank" >
+            <i class="fa fa-phone" ></i>
         </a>
-        <a href="{{$setting->number2}}" style="margin: 15px">
-            <i class="fa fa-phone" style="color: white;font-size: 25px"></i>
-        </a>
-        <a href="{{$setting->youtube}}" style="margin: 15px">
-            <i class="fa fa-youtube" style="color: red;font-size: 25px"></i>
+
+        <a href="{{$setting->youtube}}" target="_blank" >
+            <i class="fa fa-youtube" ></i>
         </a>
     </div>
 </div>
@@ -73,8 +72,16 @@
 <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('front/js/main.js') }}"></script>
 <script src="{{ asset('front/js/zoomerang.js') }}"></script>
+<script src="{{asset('front/video/youtube-overlay.js')}}"></script>
+<script src="{{asset('front/js/custom.js')}}"></script>
 <script>
-    Zoomerang.listen('.my-image')
+    Zoomerang.listen('.my-image');
+
+    function src(){
+        $( "#close" ).attr({ "src" : "{{asset('front/video/x-mark-black-icon.svg')}}" });
+        console.log("{{asset('front/video/x-mark-black-icon.svg')}}")
+    }
+
 </script>
 </body>
 </html>

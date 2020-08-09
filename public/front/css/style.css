@@ -67,7 +67,13 @@ a {
     z-index: 1;
     margin-top: 10px;
 }
-
+.carousel-indicators .owl{
+    background: white;
+    border-radius: 50%;
+    width: 13px;
+    margin: 0 8px;
+    height: 8px;
+}
 .services {
     margin-top: 30px;
 }
@@ -108,14 +114,35 @@ a {
 }
 
 .websites {
-    margin: 0!important;
+    margin: 0 !important;
     padding-top: 90%;
+}
+
+#close {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto
 }
 
 .ser-div > img {
     width: 100%;
-    z-index: 1;
+    z-index: 4;
 }
+
+.ser-div .vid-style i {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    padding: 10px 19px;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+}
+
 
 .contact-form {
     background: #000;
@@ -179,15 +206,27 @@ textarea {
 }
 
 .footer .social-media {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .footer .social-media > a {
     margin: 0 5px;
+    padding: 18px 26px;
+    border-radius: 50%;
+    position: relative;
+    background: white;
 }
 
-.footer .social-media > a > img {
+.footer .social-media > a > i {
     width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5f5d5e;
+    font-size: 30px !important;
+    border: none;
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -204,10 +243,11 @@ textarea {
 
 
 }
-@media only screen and (min-width: 770px) {
-    .works  .image-feature {
 
-        height: 489px !important;
+@media only screen and (min-width: 770px) {
+    .works .image-feature {
+
+        height: 420px !important;
         width: 825px !important;
     }
 }
@@ -241,3 +281,4 @@ textarea {
 
 
 }
+

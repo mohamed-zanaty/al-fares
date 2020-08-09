@@ -10,7 +10,7 @@ class Blog extends Model
     use Translatable;
 
     protected $fillable = [
-        'admin_id', 'featured', 'image', 'status','category_id', 'seo_title', 'seo_description', 'seo_keyword'
+        'admin_id', 'featured', 'image','link', 'status','category_id', 'seo_title', 'seo_description', 'seo_keyword'
     ];//for column
 
     public $translatedAttributes = ['title', 'description'];//for lang

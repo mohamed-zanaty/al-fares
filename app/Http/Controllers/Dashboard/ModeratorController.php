@@ -85,7 +85,7 @@ class ModeratorController extends Controller
             }
 
         toast(__('site.added_successfully'), 'success');
-            return redirect()->route('moderator.index')->with('success', __('site.added_successfully'));
+            return redirect()->route('moderator.index');
 
     }//end of store
 
@@ -142,7 +142,7 @@ class ModeratorController extends Controller
 
 
         toast(__('site.updated_successfully'), 'success');
-        return redirect()->route('moderator.index')->with('success', __('site.updated_successfully'));
+        return redirect()->route('moderator.index');
 
     }//end of update
 

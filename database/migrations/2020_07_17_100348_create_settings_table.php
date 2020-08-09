@@ -13,15 +13,12 @@ class CreateSettingsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('email');
-            $table->text('number1');
-            $table->text('number2');
-            $table->text('url');
+            $table->text('number');
             $table->text('facebook');
             $table->text('twitter');
             $table->text('instagram');
             $table->text('youtube');
             $table->string('image')->default('logo.com');
-            $table->string('address');
             $table->timestamps();
         });
     }

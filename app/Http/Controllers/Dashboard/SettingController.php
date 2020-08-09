@@ -44,7 +44,6 @@ class SettingController extends Controller
 
         $request_data = $request->except(['_token', '_method', 'image','updated_at', 'created_at']);
 
-
         if ($request->image) {
 
             if ($setting->image != 'logo.png') {

@@ -77,7 +77,7 @@
 
 
                                         @php
-                                            $models = ['users', 'categories', 'clients','about','blog'];
+                                            $models = ['users', 'categories','blog'];
                                             $maps = ['create', 'read', 'update', 'delete'];
                                         @endphp
 

@@ -76,7 +76,7 @@ class ProfileController extends Controller
         if (!$create)
             toast(__('site.error'), 'error');
 
-        toast(__('site.updated_successfully'), 'error');
+        toast(__('site.updated_successfully'), 'success');
         return redirect()->route('admin.dashboard')->with('success', __('site.updated_successfully'));
     }//enf of update
 }//end of controller

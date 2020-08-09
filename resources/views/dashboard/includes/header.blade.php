@@ -1,7 +1,7 @@
-<nav
+<nav style=""
     class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-info navbar-shadow">
     <div class="navbar-wrapper">
-        <div class="navbar-header">
+        <div class="navbar-header" style="background: #2c303b">
 
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mobile-menu d-md-none mr-auto"><a
@@ -11,7 +11,7 @@
                     <span class="navbar-brand" >
                         <img class="brand-logo" alt="modern admin logo"
                              src="{{auth('admin')->user()->image_path}}">
-                        <h3 class="brand-text">{{__('site.admin_panel')}}</h3>
+                        <h3 class="brand-text" style="color: white">{{__('site.admin_panel')}}</h3>
                     </span>
                 </li>
                 <li class="nav-item d-md-none">
@@ -20,7 +20,7 @@
                 </li>
             </ul>
         </div>
-        <div class="navbar-container content">
+        <div class="navbar-container content" style="background: #2c303b">
             <div class="collapse navbar-collapse" id="navbar-mobile">
                 <ul class="nav navbar-nav mr-auto float-left">
                     <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs"

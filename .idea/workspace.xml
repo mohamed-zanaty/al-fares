@@ -2,20 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b65740-ecd6-4fd3-b347-f906f821a684" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/front/video/x-mark-black-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/video/youtube-overlay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/video/youtube-overlay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ModeratorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ModeratorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_17_082150_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_17_082150_create_blogs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_17_100348_create_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_17_100348_create_settings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SettingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SettingSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/front/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/category/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/blog/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/blog/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/blog/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/blog/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/setting/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/setting/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/page/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/page/user/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/includes/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/mail/mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/mail/mail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/page/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/page/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/page/services.blade.php" afterDir="false" />
     </list>
@@ -173,7 +183,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/front/video" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,14 +193,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\cm\Desktop\New folder (2)\faressite\public\front" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cm\Desktop\New folder (2)\faressite\public\front\video" />
       <recent name="C:\Users\cm\Desktop\New folder (2)\fff\public\front\js" />
       <recent name="C:\Users\cm\Desktop\New folder (2)\fff\public\front" />
-      <recent name="C:\Users\cm\Desktop\New folder (2)\fff\resources\views\front\page" />
-      <recent name="C:\Users\cm\Desktop\New folder (2)\fff\resources\views\dashboard\page\conatct" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cm\Desktop\New folder (2)\faressite\public\front\video" />
+      <recent name="C:\Users\cm\Desktop\New folder (2)\faressite\public\front\video\src" />
+      <recent name="C:\Users\cm\Desktop\New folder (2)\faressite\public\front" />
       <recent name="C:\Users\cm\Desktop\New folder (2)\fff\public\front\js" />
       <recent name="C:\Users\cm\Desktop\New folder (2)\fff\public\front" />
     </key>
@@ -231,7 +242,8 @@
       <workItem from="1595758446378" duration="4421000" />
       <workItem from="1595763947616" duration="72240000" />
       <workItem from="1596532833740" duration="3776000" />
-      <workItem from="1596538063933" duration="19403000" />
+      <workItem from="1596538063933" duration="34257000" />
+      <workItem from="1596965504636" duration="13969000" />
     </task>
     <task id="LOCAL-00001" summary="'nullable seo'">
       <created>1596532963968</created>
@@ -254,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596538091562</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="'main'">
+      <created>1596628792282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596628792282</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,17 +281,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'nullable seo'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'nullable seo'" />
+    <MESSAGE value="'main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'main'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596022152647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1596022152647" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596538088755">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596628786395">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596538088755" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596628786395" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1595973794035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -289,10 +309,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595863456127" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1595764021975">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1596628835178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595764021975" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596628835178" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1596965504628">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596965504628" />
     <state x="100" y="100" width="1166" height="528" key="dock-window-1" timestamp="1595763683455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -301,13 +325,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="100" y="100" width="1166" height="528" key="dock-window-2/0.0.1366.728@0.0.1366.728" timestamp="1595763683456" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1596028252869">
+    <state x="379" y="0" width="607" height="728" key="find.popup" timestamp="1596977373306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596028252869" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596626007567">
+    <state x="379" y="0" width="607" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596977373306" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1596971784424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596626007567" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596971784424" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596985909703">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596985909703" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/front/includes/footer.blade.php</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/front/page/services.blade.php</url>
+          <line>75</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

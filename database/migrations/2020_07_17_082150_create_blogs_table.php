@@ -22,6 +22,7 @@ class CreateBlogsTable extends Migration
             $table->boolean('featured')->default(0);
             $table->boolean('status')->default(0);
             $table->string('image')->nullable();
+            $table->longText('link')->nullable();
             $table->string('seo_title')->nullable();
             $table->string('seo_description')->nullable();
             $table->string('seo_keyword')->nullable();

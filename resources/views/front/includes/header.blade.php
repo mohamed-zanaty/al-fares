@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{$setting->title}}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
 
@@ -19,8 +20,10 @@
                 font-family: 'Cairo', sans-serif;
                 font-size: 17px;
             }
+
         </style>
     @endif
+    <link href="{{asset('front/video/youtube-overlay.css')}}" rel="stylesheet">
     <script src="{{asset('front/js/html5shiv.min.js')}}"></script>
     <script src="{{asset('front/js/respond.min.js')}}"></script>
 
@@ -31,7 +34,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="logo-div">
                 <a class="navbar-brand" href="#">
-                    <img src="{{$setting->image_path}}" alt="">
+                    <img style="{{app()->getLocale() == 'ar'?  'transform:  rotateY(180deg);' : ''}}" src="{{$setting->image_path}}" alt="">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -42,7 +45,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="{{url('/')}}"><span class="list-item-home current"> @lang('site.home')</span> </a>
+                        <a class="nav-link" href="{{url('/')}}"><span
+                                class="list-item-home current"> @lang('site.home')</span> </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link"> <span class="list-item-ser "> @lang('site.our_service')</span></a>
@@ -64,7 +68,7 @@
                                     @if(app()->getLocale()=='ar')
                                         en
                                     @else
-                                        ar
+                                        العربيه
                                     @endif
                                 </a>
                                 <?php break; ?>
